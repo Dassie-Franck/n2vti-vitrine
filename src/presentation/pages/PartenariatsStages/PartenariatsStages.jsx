@@ -10,7 +10,7 @@ import { partenariatsIntro } from '@content/partenariats/partenariatsStages'
 export default function PartenariatsStages() {
   return (
     <>
-      <PageHeroBanner image="../../../../public/assets/banners/company.png" height={420} />
+      <PageHeroBanner image="/assets/banners/company.png" height={420} />
       <Breadcrumb items={[{ label: 'Accueil', path: '/' }, { label: 'Partenariats & Stages' }]} />
 
       <Box sx={{ py: { xs: 5, md: 6 }, textAlign: 'center' }}>

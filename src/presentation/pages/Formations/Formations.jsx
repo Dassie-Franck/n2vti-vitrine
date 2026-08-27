@@ -36,7 +36,7 @@ export default function Formations() {
 
   return (
     <Box sx={{ pb: 8 }}>
-      <PageHeroBanner image="../../../../public/assets/banners/formation.jpg" />
+      <PageHeroBanner image="/assets/banners/formation.jpg" />
       <Breadcrumb items={[{ label: 'Accueil', path: '/' }, { label: 'Formation' }]} />
       <Box sx={{ py: { xs: 4, md: 6 } }}>
         <Container maxWidth="lg">

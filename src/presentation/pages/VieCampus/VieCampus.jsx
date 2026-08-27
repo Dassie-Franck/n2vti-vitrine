@@ -7,7 +7,7 @@ import CTABanner from '@presentation/components/common/CTABanner'
 export default function VieCampus() {
   return (
     <>
-      <PageHeroBanner image="../../../../public/assets/banners/vie-campus.webp" height={420} />
+      <PageHeroBanner image="/assets/banners/vie-campus.webp" height={420} />
       <Breadcrumb items={[{ label: 'Accueil', path: '/' }, { label: 'Vie au campus' }]} />
       <ClubsSection />
       <InfrastructuresSection />

@@ -7,7 +7,7 @@ import { equipeYaounde, equipeDouala } from '@content/equipe/equipe'
 export default function Equipe() {
   return (
     <>
-      <PageHeroBanner image="../../../../public/assets/banners/equipe.jpg" height={420} />
+      <PageHeroBanner image="/assets/banners/equipe.jpg" height={420} />
       <Breadcrumb items={[{ label: 'Accueil', path: '/' }, { label: 'Nos équipes' }]} />
 
       <EquipeCampusSection

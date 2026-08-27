@@ -9,7 +9,7 @@ import SpecificitesSection from '@presentation/components/apropos/SpecificitesSe
 export default function APropos() {
   return (
     <>
-      <PageHeroBanner image="../../../../public/assets/apropos.jpg" height={320} />
+      <PageHeroBanner image="/assets/apropos.jpg" height={320} />
       <AProposHeader />
       <QuiSommesNousSection />
       <ValeursSection />
