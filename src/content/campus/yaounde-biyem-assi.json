@@ -13,12 +13,12 @@
   "image": "/assets/images/campus/yaounde.jpg",
   "galerie": [
     {
-      "image": "../../../public/assets/hero/hero1.jpg",
+      "image": "/assets/hero/hero1.jpg",
       "titre": "Campus de Yaoundé - Vue de l'intérieur",
       "description": "Situé au cœur de la ville, dans un cadre propice à l'apprentissage et à la pratique."
     },
     {
-      "image": "../../../public/assets/hero/.jpg",
+      "image": "/assets/hero/yaounde.jpg",
       "titre": "Campus de Yaoundé - Vue de l'extérieur",
       "description": "Un environnement moderne et accessible, à proximité des structures partenaires."
     }

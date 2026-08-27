@@ -7,7 +7,7 @@ export const quiSommesNous = {
     "Le campus de Yaoundé (Biyem-Assi) accueille l'ensemble des filières phares de l'institut, avec un accompagnement individualisé et un réseau de stages en entreprise. ",
   ],
   images: {
-    principale: '../../../public/assets/filieres/chimiste.jpg',
-    secondaire: '../../../public/assets/filieres/vendeur-pharmacie.jpg',
+    principale: '/assets/filieres/chimiste.jpg',
+    secondaire: '/assets/filieres/vendeur-pharmacie.jpg',
   },
 }

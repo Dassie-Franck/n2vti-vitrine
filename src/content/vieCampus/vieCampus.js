@@ -22,8 +22,8 @@ export const clubsAssociatifs = [
 ]
 
 export const infrastructures = [
-  { titre: 'Sceance de prospection', image: '../../../public/assets/prospection.jpg' },
-  { titre: 'Ateliers pratiques', image: '../../../public/assets/test2.jpg' },
-  { titre: "Stage Academique", image: '../../../public/assets/stage.jpg' },
-  { titre: 'Sortie scolaire & seamce sportif', image: '../../../public/assets/sport.jpg' },
+  { titre: 'Sceance de prospection', image: '/assets/prospection.jpg' },
+  { titre: 'Ateliers pratiques', image: '/assets/test2.jpg' },
+  { titre: "Stage Academique", image: '/assets/stage.jpg' },
+  { titre: 'Sortie scolaire & seamce sportif', image: '/assets/sport.jpg' },
 ]

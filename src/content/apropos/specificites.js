@@ -2,7 +2,7 @@ export const specificites = {
   tagline: 'PARTICULARITÉS',
   titre: 'Nos spécificités',
   intro: "N2VTI est ouvert au plus grand nombre au Cameroun :",
-  image: '../../../public/n2vti.png',
+  image: '/n2vti.png',
   points: [
     "Le volet financier est abordé avec la plus grande attention : des facilités de paiement échelonné sont proposées, mettant famille et apprenants face à leurs responsabilités, sans jamais compromettre l'accès à la formation.",
     "Une place importante est accordée aux jeunes filles et aux femmes en reconversion professionnelle, notamment dans les filières paramédical et beauté/esthétique.",

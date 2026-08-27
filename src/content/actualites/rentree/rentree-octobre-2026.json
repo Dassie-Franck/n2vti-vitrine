@@ -5,7 +5,7 @@
   "datePublication": "2026-08-01",
   "resume": "Les inscriptions pour la session d'octobre 2026 sont ouvertes sur tous nos campus.",
   "contenu": "GSVTI ouvre les inscriptions pour la rentrée d'octobre 2026 sur les campus de Yaoundé et Douala. Places limitées, inscrivez-vous dès maintenant.",
-  "image": "../../../public/assets/rentree1.jpg",
+  "image": "/assets/rentree1.jpg",
   "campusIds": ["yaounde-biyem-assi", "douala-bonamoussadi"]
 },
 {
@@ -15,7 +15,7 @@
   "datePublication": "2026-08-01",
   "resume": "L'Institut ouvre ses portes aux nouveaux étudiants pour la rentrée académique 2026-2027.",
   "contenu": "L'Institut ouvre ses portes aux nouveaux étudiants pour la rentrée académique 2026-2027. Rejoignez une formation de qualité dans les métiers du paramédical et préparez-vous à exercer une profession essentielle au service de la santé et du bien-être de la population sur les campus de Yaoundé et Douala.",
-  "image": "../../../public/assets/rentree.jpg",
+  "image": "/assets/rentree.jpg",
   "campusIds": ["yaounde-biyem-assi", "douala-bonamoussadi"]
 }
 ]
