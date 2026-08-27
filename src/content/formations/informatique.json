@@ -1,0 +1,438 @@
+{
+  "categorie": "informatique",
+  "libelleCategorie": "Informatique",
+  "formations": [
+    {
+      "id": "maintenance-informatique",
+      "slug": "maintenance-informatique",
+      "titre": "Maintenance Informatique",
+      "domaine": "informatique",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Première / Lower Sixth",
+      "tarif": {
+        "montant": 245000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à former des techniciens capables d'installer, configurer, entretenir, diagnostiquer et réparer les équipements informatiques ainsi que les systèmes d'exploitation.",
+      "programme": [
+        "Insertion et vie professionnelles",
+        "Architecture et fonctionnement des ordinateurs",
+        "Composants matériels d'un ordinateur",
+        "Montage et démontage des ordinateurs",
+        "Installation et configuration des systèmes d'exploitation",
+        "Windows et environnement Microsoft",
+        "Installation et gestion des pilotes",
+        "Installation des logiciels et applications",
+        "Maintenance préventive",
+        "Maintenance corrective",
+        "Diagnostic des pannes matérielles",
+        "Diagnostic des pannes logicielles",
+        "Dépannage informatique",
+        "Récupération et sauvegarde des données",
+        "Installation et configuration des périphériques",
+        "Sécurité informatique de base",
+        "Antivirus et protection des postes",
+        "Initiation aux réseaux informatiques",
+        "Partage de ressources réseau",
+        "Bureautique professionnelle",
+        "Outils de diagnostic et de maintenance",
+        "Assistance et support aux utilisateurs",
+        "Gestion d'un parc informatique",
+        "Stage en entreprise"
+      ],
+      "competences": [
+        "Assembler et désassembler un ordinateur",
+        "Installer et configurer un système d'exploitation",
+        "Installer les pilotes et logiciels",
+        "Diagnostiquer une panne informatique",
+        "Réparer les pannes matérielles et logicielles",
+        "Effectuer la maintenance préventive",
+        "Configurer les périphériques",
+        "Assurer le support technique aux utilisateurs",
+        "Gérer un parc informatique",
+        "Sécuriser les postes de travail"
+      ],
+      "debouches": [
+        "Technicien de maintenance informatique",
+        "Technicien support informatique",
+        "Technicien helpdesk",
+        "Informaticien",
+        "Technicien poste de travail",
+        "Responsable de parc informatique",
+        "Assistant informatique",
+        "Technicien SAV informatique",
+        "Consultant informatique",
+        "Assistant ingénieur informatique"
+      ],
+      "secteursEmploi": [
+        "Entreprises privées",
+        "Administrations",
+        "Établissements scolaires",
+        "Hôpitaux et établissements de santé",
+        "Banques et établissements financiers",
+        "ONG",
+        "Sociétés informatiques",
+        "Centres de maintenance",
+        "Entreprises de télécommunication"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "montage-audiovisuel",
+      "slug": "montage-audiovisuel",
+      "titre": "Montage Audiovisuel",
+      "domaine": "informatique",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Baccalauréat / GCE Advanced Level",
+      "tarif": {
+        "montant": 295000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation spécialisée dans la manipulation des logiciels de montage vidéo, le mixage sonore, la post-production et la création de contenus audiovisuels professionnels.",
+      "programme": [
+        "Introduction à la chaîne de production audiovisuelle",
+        "Matériel de prise de vue et de son",
+        "Techniques de tournage",
+        "Principes fondamentaux du montage vidéo",
+        "Adobe Premiere Pro",
+        "Adobe After Effects (Effets spéciaux et motion design)",
+        "DaVinci Resolve (Étalonnage couleur)",
+        "Mixage et traitement du son",
+        "Habillage TV et web",
+        "Formats d'exportation et compression",
+        "Gestion des flux de production",
+        "Stage en entreprise"
+      ],
+      "competences": [
+        "Maîtriser les logiciels de montage vidéo professionnels",
+        "Réaliser l'étalonnage et la correction colorimétrique",
+        "Créer des effets visuels et du motion design",
+        "Effectuer le mixage et le traitement audio",
+        "Préparer des exports adaptés au web et à la télévision"
+      ],
+      "debouches": [
+        "Monteur vidéo",
+        "Monteur-truquiste",
+        "Cadreur-monteur",
+        "Technicien post-production",
+        "Motion designer",
+        "Créateur de contenu multimédia",
+        "Assistant réalisateur"
+      ],
+      "secteursEmploi": [
+        "Chaînes de télévision",
+        "Studios de production",
+        "Agences de communication",
+        "Agences web",
+        "Entreprises de divertissement",
+        "Freelance"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "infographie",
+      "slug": "infographie",
+      "titre": "Infographie et Graphisme de Production",
+      "domaine": "informatique",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Baccalauréat / GCE Advanced Level",
+      "tarif": {
+        "montant": 295000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à développer les compétences techniques et artistiques nécessaires à la conception de supports de communication visuelle, imprimés et numériques.",
+      "programme": [
+        "Insertion et vie professionnelles",
+        "Communication professionnelle",
+        "Initiation à l'informatique et Internet",
+        "Fondamentaux du design graphique",
+        "Théorie des couleurs et typographie",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Adobe InDesign",
+        "Retouche et traitement d'images",
+        "Création de logos et identités visuelles",
+        "Création d'affiches, flyers et supports publicitaires",
+        "Design pour les réseaux sociaux",
+        "Préparation des fichiers pour impression",
+        "Création d'un portfolio professionnel",
+        "Stage en entreprise"
+      ],
+      "competences": [
+        "Concevoir une identité visuelle",
+        "Créer des logos et chartes graphiques",
+        "Réaliser des affiches, flyers et visuels publicitaires",
+        "Retoucher et traiter des photographies",
+        "Préparer des fichiers pour l'impression offset et numérique"
+      ],
+      "debouches": [
+        "Infographiste",
+        "Graphiste",
+        "Maquettiste",
+        "Web designer",
+        "Designer graphique",
+        "Infographiste en imprimerie",
+        "Graphiste en agence de communication"
+      ],
+      "secteursEmploi": [
+        "Agences de communication",
+        "Imprimeries",
+        "Agences de publicité",
+        "Studios graphiques",
+        "Maisons d'édition",
+        "Freelance"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "maintenance-reseaux-informatiques",
+      "slug": "maintenance-reseaux-informatiques",
+      "titre": "Maintenance et Réseaux Informatiques",
+      "domaine": "informatique",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Première / Lower Sixth",
+      "tarif": {
+        "montant": 250000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation axée sur la configuration, le déploiement, l'administration et la sécurisation des réseaux informatiques locaux ainsi que la maintenance avancée des infrastructures.",
+      "programme": [
+        "Fondamentaux des réseaux (Modèle OSI, TCP/IP)",
+        "Câblage réseau et infrastructures physiques",
+        "Configuration des routeurs et commutateurs (Switchs Cisco)",
+        "Adressage IP (IPv4 / IPv6, Subnetting)",
+        "Protocoles réseaux (DHCP, DNS, FTP, HTTP)",
+        "Administration des systèmes Windows Server et Linux",
+        "Sécurité des réseaux et pare-feu (Firewalls)",
+        "Détection et résolution des pannes réseaux",
+        "Virtualisation et services cloud de base",
+        "Maintenance des équipements d'interconnexion",
+        "Stage en entreprise"
+      ],
+      "competences": [
+        "Installer et configurer un réseau local (LAN/WAN)",
+        "Configurer des routeurs et des commutateurs",
+        "Administrer des serveurs réseaux",
+        "Sécuriser un réseau contre les intrusions",
+        "Diagnostiquer et dépanner les pannes de connectivité"
+      ],
+      "debouches": [
+        "Technicien réseaux",
+        "Administrateur réseau junior",
+        "Technicien support réseaux et télécoms",
+        "Responsable infrastructure réseau",
+        "Intégrateur de solutions réseaux"
+      ],
+      "secteursEmploi": [
+        "Opérateurs de télécommunications",
+        "Entreprises de services du numérique (ESN)",
+        "Grandes entreprises",
+        "Banques",
+        "Administrations publiques"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "webmaster",
+      "slug": "webmaster",
+      "titre": "Webmaster",
+      "domaine": "informatique",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Baccalauréat / GCE Advanced Level",
+      "tarif": {
+        "montant": 295000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à former des spécialistes capables de concevoir, intégrer, publier, administrer et maintenir des sites web professionnels.",
+      "programme": [
+        "Architecture du Web",
+        "HTML5 / CSS3 / JavaScript de base",
+        "Responsive Web Design",
+        "CMS WordPress (Installation, thèmes, extensions)",
+        "Création de sites vitrines et e-commerce",
+        "Hébergement Web, noms de domaine et DNS",
+        "Sécurité des sites Web et sauvegardes",
+        "Référencement naturel (SEO) et outils Google",
+        "Gestion et animation de contenus web",
+        "Stage en entreprise"
+      ],
+      "competences": [
+        "Créer et intégrer des pages Web adaptatives",
+        "Administrer un site internet sous WordPress",
+        "Gérer l'hébergement et la configuration des serveurs web",
+        "Optimiser le référencement naturel d'un site",
+        "Assurer la maintenance corrective et évolutive"
+      ],
+      "debouches": [
+        "Webmaster",
+        "Intégrateur Web",
+        "Administrateur de site Web",
+        "Gestionnaire de contenu Web",
+        "Assistant SEO",
+        "Freelance Web"
+      ],
+      "secteursEmploi": [
+        "Agences Web",
+        "Agences de communication",
+        "Entreprises privées",
+        "E-commerce",
+        "Médias",
+        "Freelance"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "developpeur-applications-mobiles",
+      "slug": "developpeur-applications-mobiles",
+      "titre": "Développeur d'Applications Mobiles",
+      "domaine": "informatique",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Baccalauréat / GCE Advanced Level",
+      "tarif": {
+        "montant": 310000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation approfondie axée sur la conception et le développement d'applications mobiles performantes et ergonomiques pour les écosystèmes Android et iOS.",
+      "programme": [
+        "Introduction à la programmation orientée objet",
+        "Bases de JavaScript / TypeScript",
+        "Fondamentaux du développement mobile",
+        "UI/UX Design pour applications mobiles",
+        "React Native / Flutter (Multiplateforme)",
+        "Consommation d'API REST et bases de données embarquées",
+        "Gestion de l'authentification et sécurité mobile",
+        "Tests, débogage et optimisation des performances",
+        "Publication sur Google Play Store et Apple App Store",
+        "Stage en entreprise"
+      ],
+      "competences": [
+        "Concevoir l'architecture d'une application mobile",
+        "Développer des interfaces utilisateur fluides et responsives",
+        "Connecter une application à un backend distant via des API",
+        "Gérer le stockage local des données sur mobile",
+        "Publier et maintenir des applications sur les stores"
+      ],
+      "debouches": [
+        "Développeur mobile junior",
+        "Développeur React Native / Flutter",
+        "Intégrateur d'applications mobiles",
+        "Consultant technique mobile",
+        "Développeur Full-Stack mobile"
+      ],
+      "secteursEmploi": [
+        "Startups technologiques",
+        "ESN (Entreprises de Services du Numérique)",
+        "Agences de développement mobile",
+        "Grandes entreprises",
+        "Freelance"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "marketing-digital",
+      "slug": "marketing-digital",
+      "titre": "Marketing Digital et E-Commerce",
+      "domaine": "informatique",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "CQP",
+      "niveauRequis": "Baccalauréat / GCE Advanced Level",
+      "tarif": {
+        "montant": 295000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle consacrée à la stratégie digitale, au marketing des réseaux sociaux, à la création de contenu, à la publicité en ligne, au référencement et au commerce électronique.",
+      "programme": [
+        "Fondamentaux du marketing digital et stratégie",
+        "Community Management et Social Media Management",
+        "Animation des réseaux sociaux (Facebook, Instagram, TikTok, LinkedIn)",
+        "Création de contenus digitaux et copywriting",
+        "Publicité payante sur les réseaux (Meta Ads, Google Ads)",
+        "Référencement naturel (SEO) et payant (SEA)",
+        "Email marketing et automation",
+        "Création et gestion d'une boutique e-commerce",
+        "Analyse de données et web analytics (Google Analytics)",
+        "Stage en entreprise"
+      ],
+      "competences": [
+        "Élaborer une stratégie digitale multicanal",
+        "Gérer et animer des communautés en ligne",
+        "Créer et optimiser des campagnes publicitaires payantes",
+        "Mettre en place des tunnels de conversion e-commerce",
+        "Mesurer et analyser les performances web"
+      ],
+      "debouches": [
+        "Community Manager",
+        "Social Media Manager",
+        "Chargé de communication digitale",
+        "Traffic Manager junior",
+        "Content Manager",
+        "E-commerce Manager junior",
+        "Consultant digital"
+      ],
+      "secteursEmploi": [
+        "Agences digitales",
+        "Agences de communication",
+        "E-commerce",
+        "Startups",
+        "PME et grandes entreprises",
+        "Freelance"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
+}

@@ -1,0 +1,593 @@
+{
+  "categorie": "paramedical",
+  "libelleCategorie": "Paramédical",
+  "formations": [
+    {
+      "id": "auxiliaire-de-vie-sociale",
+      "slug": "auxiliaire-de-vie-sociale",
+      "titre": "Auxiliaire de Vie Sociale / Aide-Soignant",
+      "domaine": "paramedical",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "CQP",
+      "niveauRequis": "3e / BEPC / CAP / GCE O Level",
+      "tarif": {
+        "montant": 350000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à préparer aux métiers d'accompagnement et d'assistance des personnes âgées, malades, handicapées ou dépendantes dans les établissements de santé et à domicile.",
+      "programme": [
+        "Introduction aux métiers de la santé",
+        "Anatomie et physiologie humaine",
+        "Psychologie et relation d'aide",
+        "Hygiène corporelle et confort de la personne",
+        "Soins d'hygiène et de confort",
+        "Aide à la toilette et à l'habillage",
+        "Aide à l'alimentation",
+        "Aide à la mobilité et aux déplacements",
+        "Prévention des escarres",
+        "Installation et mobilisation des personnes dépendantes",
+        "Surveillance de l'état général",
+        "Prise des paramètres vitaux",
+        "Premiers secours",
+        "Prévention et contrôle des infections",
+        "Hygiène hospitalière",
+        "Communication avec le patient et la famille",
+        "Accompagnement des personnes âgées",
+        "Accompagnement des personnes handicapées",
+        "Accompagnement des personnes alitées",
+        "Éthique et déontologie",
+        "Travail en équipe avec les professionnels de santé",
+        "Stage pratique en établissement de santé"
+      ],
+      "competences": [
+        "Assurer les soins d'hygiène et de confort",
+        "Accompagner les personnes dépendantes",
+        "Aider à la mobilité",
+        "Assister lors des activités quotidiennes",
+        "Surveiller l'état général d'une personne",
+        "Mesurer certains paramètres vitaux",
+        "Appliquer les règles d'hygiène et de sécurité",
+        "Apporter un soutien relationnel",
+        "Alerter les professionnels de santé en cas de changement de l'état d'une personne"
+      ],
+      "debouches": [
+        "Auxiliaire de vie sociale",
+        "Aide-soignant",
+        "Assistant de vie",
+        "Agent d'accompagnement",
+        "Assistant auprès des personnes âgées",
+        "Assistant auprès des personnes handicapées",
+        "Aide à domicile"
+      ],
+      "secteursEmploi": [
+        "Hôpitaux",
+        "Cliniques",
+        "Centres de santé",
+        "Maisons de retraite",
+        "Centres spécialisés",
+        "Services d'aide à domicile",
+        "ONG",
+        "Structures d'accueil spécialisées",
+        "Résidences pour personnes âgées"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "delegue-medical",
+      "slug": "delegue-medical",
+      "titre": "Délégué Médical",
+      "domaine": "paramedical",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Baccalauréat + 2",
+      "tarif": {
+        "montant": 395000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à préparer aux fonctions de promotion et d'information médicale auprès des professionnels de santé pour le compte d'entreprises pharmaceutiques.",
+      "programme": [
+        "Anatomie humaine",
+        "Physiologie",
+        "Pharmacologie générale",
+        "Pharmacologie spéciale",
+        "Pharmacognosie",
+        "Galenique pharmaceutique",
+        "Développement du médicament",
+        "Typologie des études sur les médicaments",
+        "Qualité et contrôle des médicaments",
+        "Compléments alimentaires",
+        "Pathologies courantes",
+        "Produits pharmaceutiques",
+        "Techniques de communication médicale",
+        "Techniques de visite médicale",
+        "Techniques de vente",
+        "Argumentaire médical",
+        "Techniques de négociation",
+        "Promotion des produits pharmaceutiques",
+        "Pharmacovigilance",
+        "Déontologie et éthique professionnelle",
+        "Réglementation pharmaceutique",
+        "Marketing pharmaceutique",
+        "Anglais professionnel",
+        "Stage en entreprise"
+      ],
+      "competences": [
+        "Présenter une information médicale aux professionnels de santé",
+        "Présenter les caractéristiques des produits pharmaceutiques",
+        "Préparer et réaliser une visite médicale",
+        "Construire un argumentaire produit",
+        "Développer une relation professionnelle avec les professionnels de santé",
+        "Assurer le suivi commercial de son secteur",
+        "Participer à la pharmacovigilance",
+        "Respecter les règles éthiques et professionnelles"
+      ],
+      "debouches": [
+        "Délégué médical",
+        "Visiteur médical",
+        "Visiteur pharmaceutique",
+        "Attaché à la promotion médicale",
+        "Commercial pharmaceutique",
+        "Représentant pharmaceutique",
+        "Conseiller en produits de santé"
+      ],
+      "secteursEmploi": [
+        "Laboratoires pharmaceutiques",
+        "Industries pharmaceutiques",
+        "Entreprises de dispositifs médicaux",
+        "Agences de promotion médicale",
+        "Grossistes-répartiteurs",
+        "Entreprises de produits de santé"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "technicien-de-laboratoire",
+      "slug": "technicien-de-laboratoire",
+      "titre": "Aide Chimiste Biologiste / Agent Technique Médico-Sanitaire",
+      "domaine": "paramedical",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "CQP",
+      "niveauRequis": "3e / BEPC / CAP / GCE O Level",
+      "tarif": {
+        "montant": 350000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à former des assistants capables de participer aux opérations courantes de laboratoire, à la préparation des échantillons et à l'entretien du matériel médico-sanitaire.",
+      "programme": [
+        "Anatomie et physiologie",
+        "Biologie générale",
+        "Microbiologie",
+        "Biochimie",
+        "Hématologie",
+        "Parasitologie",
+        "Immunologie",
+        "Introduction aux analyses médicales",
+        "Techniques de prélèvement",
+        "Préparation des échantillons biologiques",
+        "Manipulation du matériel de laboratoire",
+        "Utilisation du microscope",
+        "Préparation des réactifs",
+        "Techniques d'analyses courantes",
+        "Contrôle qualité au laboratoire",
+        "Hygiène et sécurité en laboratoire",
+        "Stérilisation et désinfection",
+        "Gestion des déchets biomédicaux",
+        "Entretien du matériel de laboratoire",
+        "Éthique et déontologie",
+        "Stage pratique en laboratoire"
+      ],
+      "competences": [
+        "Préparer les échantillons biologiques",
+        "Participer aux prélèvements",
+        "Réaliser des opérations courantes de laboratoire",
+        "Utiliser le matériel de laboratoire",
+        "Entretenir et désinfecter les équipements",
+        "Respecter les règles de biosécurité",
+        "Assurer la traçabilité des échantillons",
+        "Participer au contrôle qualité"
+      ],
+      "debouches": [
+        "Aide chimiste biologiste",
+        "Agent technique médico-sanitaire",
+        "Assistant de laboratoire",
+        "Aide-technicien de laboratoire",
+        "Assistant en laboratoire d'analyses",
+        "Agent de prélèvement"
+      ],
+      "secteursEmploi": [
+        "Laboratoires d'analyses médicales",
+        "Hôpitaux",
+        "Cliniques",
+        "Centres de santé",
+        "Laboratoires de recherche",
+        "Centres de diagnostic",
+        "Laboratoires privés"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "assistant-en-cabinet-medical",
+      "slug": "assistant-en-cabinet-medical",
+      "titre": "Assistant en Cabinet Médical",
+      "domaine": "paramedical",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "CQP",
+      "niveauRequis": "3e / BEPC / CAP / GCE O Level",
+      "tarif": {
+        "montant": 350000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à préparer des assistants capables d'accueillir les patients, préparer les consultations, assister le praticien dans certaines tâches techniques et assurer l'hygiène du matériel.",
+      "programme": [
+        "Anatomie et physiologie",
+        "Terminologie médicale",
+        "Accueil et orientation des patients",
+        "Communication avec le patient",
+        "Préparation de la consultation",
+        "Prise des paramètres vitaux",
+        "Mesure du poids et de la taille",
+        "Mesure de la température",
+        "Mesure de la tension artérielle",
+        "Préparation du matériel médical",
+        "Hygiène et asepsie",
+        "Nettoyage et stérilisation du matériel",
+        "Premiers secours",
+        "Notions de soins infirmiers",
+        "Prélèvements et examens simples",
+        "Notions d'électrocardiographie",
+        "Pansements simples",
+        "Gestion des dossiers patients",
+        "Organisation du cabinet médical",
+        "Gestion des rendez-vous",
+        "Éthique et déontologie médicale",
+        "Stage pratique en cabinet ou structure de santé"
+      ],
+      "competences": [
+        "Accueillir et orienter les patients",
+        "Préparer une consultation",
+        "Prendre les paramètres vitaux",
+        "Préparer le matériel médical",
+        "Appliquer les règles d'hygiène et d'asepsie",
+        "Nettoyer et stériliser le matériel",
+        "Assister le praticien",
+        "Gérer les dossiers patients",
+        "Organiser les rendez-vous",
+        "Appliquer les règles de confidentialité"
+      ],
+      "debouches": [
+        "Assistant en cabinet médical",
+        "Assistant médico-sanitaire",
+        "Assistant de consultation",
+        "Assistant en clinique",
+        "Agent d'accueil médical",
+        "Assistant en centre de santé"
+      ],
+      "secteursEmploi": [
+        "Cabinets médicaux",
+        "Cliniques",
+        "Hôpitaux",
+        "Centres de santé",
+        "Centres médicaux spécialisés",
+        "Laboratoires et structures médico-sanitaires"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "vendeur-en-pharmacie",
+      "slug": "vendeur-en-pharmacie",
+      "titre": "Auxiliaire / Vendeur en Pharmacie",
+      "domaine": "paramedical",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Probatoire",
+      "tarif": {
+        "montant": 350000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à préparer aux fonctions d'assistance en officine, de gestion des produits pharmaceutiques et de conseil sur les produits de parapharmacie dans le respect du cadre professionnel.",
+      "programme": [
+        "Anatomie et physiologie",
+        "Pharmacologie générale",
+        "Pharmacologie appliquée",
+        "Terminologie pharmaceutique",
+        "Connaissance des médicaments",
+        "Formes pharmaceutiques",
+        "Voies d'administration",
+        "Indications et précautions d'emploi",
+        "Parapharmacie",
+        "Produits d'hygiène et de soins",
+        "Compléments alimentaires",
+        "Gestion des stocks pharmaceutiques",
+        "Réception des produits",
+        "Rangement et conservation",
+        "Gestion des commandes",
+        "Gestion des dates de péremption",
+        "Techniques de vente",
+        "Relation avec la clientèle",
+        "Législation pharmaceutique",
+        "Pharmacovigilance",
+        "Hygiène et sécurité",
+        "Informatique de gestion",
+        "Stage en officine"
+      ],
+      "competences": [
+        "Réceptionner les produits pharmaceutiques",
+        "Ranger et conserver les produits",
+        "Gérer les stocks",
+        "Préparer les commandes",
+        "Identifier les produits et leurs caractéristiques",
+        "Conseiller sur les produits de parapharmacie",
+        "Assurer l'accueil des clients",
+        "Utiliser les outils de gestion d'une officine",
+        "Respecter les règles de conservation des produits",
+        "Appliquer les règles de confidentialité et de déontologie"
+      ],
+      "debouches": [
+        "Vendeur en pharmacie",
+        "Auxiliaire en pharmacie",
+        "Assistant en officine",
+        "Assistant en parapharmacie",
+        "Conseiller en produits de santé et de bien-être",
+        "Gestionnaire de stock en officine"
+      ],
+      "secteursEmploi": [
+        "Officines",
+        "Parapharmacies",
+        "Grossistes-répartiteurs",
+        "Entreprises de produits pharmaceutiques",
+        "Entreprises de produits de santé"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "massotherapie",
+      "slug": "massotherapie",
+      "titre": "Massothérapie",
+      "domaine": "paramedical",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "12 mois",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Probatoire / GCE O Level",
+      "tarif": {
+        "montant": 350000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle consacrée aux techniques de massage, à l'anatomie fonctionnelle, à la prévention des risques et à l'accompagnement du bien-être physique.",
+      "programme": [
+        "Anatomie humaine",
+        "Physiologie",
+        "Biologie",
+        "Terminologie médicale",
+        "Sciences du mouvement",
+        "Anatomie musculaire",
+        "Physiopathologie musculosquelettique",
+        "Physiopathologie neuromusculaire",
+        "Techniques de massage",
+        "Massage relaxant",
+        "Massage de bien-être",
+        "Techniques de massage adaptées",
+        "Notions de réadaptation",
+        "Premiers secours",
+        "Hygiène et sécurité",
+        "Éthique et communication",
+        "Gestion d'une activité professionnelle",
+        "Informatique professionnelle",
+        "Pratique professionnelle",
+        "Stage pratique"
+      ],
+      "competences": [
+        "Identifier les principales structures anatomiques",
+        "Réaliser différentes techniques de massage",
+        "Adapter une séance aux besoins du client",
+        "Respecter les règles d'hygiène",
+        "Identifier les situations nécessitant une orientation médicale",
+        "Assurer la sécurité du bénéficiaire",
+        "Gérer une activité professionnelle de massage",
+        "Communiquer avec le client"
+      ],
+      "debouches": [
+        "Praticien en massothérapie",
+        "Masseur professionnel",
+        "Praticien en centre de bien-être",
+        "Praticien en spa",
+        "Assistant en centre de rééducation",
+        "Praticien indépendant"
+      ],
+      "secteursEmploi": [
+        "Centres de bien-être",
+        "Spas",
+        "Centres de remise en forme",
+        "Centres spécialisés",
+        "Structures de rééducation",
+        "Activité indépendante"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "secretariat-medical",
+      "slug": "secretariat-medical",
+      "titre": "Secrétariat Médical",
+      "domaine": "paramedical",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "9 mois de formation + 3 mois de stage",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP",
+      "niveauRequis": "Probatoire / GCE Advanced Level",
+      "tarif": {
+        "montant": 275000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle destinée à former des secrétaires capables d'assurer l'accueil des patients, la gestion des rendez-vous, les dossiers médicaux et l'assistance administrative des professionnels de santé.",
+      "programme": [
+        "Anatomie et biologie humaine",
+        "Terminologie médicale",
+        "Vocabulaire médical",
+        "Documents médicaux",
+        "Rédaction médicale",
+        "Secrétariat professionnel",
+        "Accueil et orientation des patients",
+        "Communication avec les patients",
+        "Gestion des rendez-vous",
+        "Gestion de l'agenda médical",
+        "Gestion des dossiers patients",
+        "Classement et archivage",
+        "Saisie et traitement des documents médicaux",
+        "Bureautique",
+        "Microsoft Word",
+        "Microsoft Excel",
+        "Courrier électronique professionnel",
+        "Notions de soins infirmiers",
+        "Notions de laboratoire médical",
+        "Premiers secours",
+        "Éthique et déontologie médicale",
+        "Confidentialité et secret professionnel",
+        "Gestion administrative d'un cabinet",
+        "Stage en cabinet ou structure de santé"
+      ],
+      "competences": [
+        "Accueillir les patients",
+        "Gérer les rendez-vous",
+        "Gérer les dossiers médicaux",
+        "Rédiger et saisir des documents médicaux",
+        "Utiliser la terminologie médicale",
+        "Organiser le secrétariat d'un cabinet",
+        "Classer et archiver les dossiers",
+        "Assurer la confidentialité des informations",
+        "Communiquer avec les patients et les professionnels de santé"
+      ],
+      "debouches": [
+        "Secrétaire médical",
+        "Assistant médico-administratif",
+        "Secrétaire de cabinet médical",
+        "Secrétaire hospitalier",
+        "Agent d'accueil médical",
+        "Réceptionniste en centre de santé"
+      ],
+      "secteursEmploi": [
+        "Cabinets médicaux",
+        "Cliniques",
+        "Hôpitaux",
+        "Centres de santé",
+        "Laboratoires",
+        "Centres d'imagerie médicale",
+        "ONG et organisations sanitaires"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "assistant-en-radiologie",
+      "slug": "assistant-en-radiologie",
+      "titre": "Assistant en Radiologie",
+      "domaine": "paramedical",
+      "campusIds": ["campus-1", "campus-2"],
+      "cursus": "12 mois",
+      "duree": {
+        "valeur": 12,
+        "unite": "mois"
+      },
+      "diplome": "DQP / CQP selon certification de l'établissement",
+      "niveauRequis": "Première / Lower Sixth",
+      "tarif": {
+        "montant": 350000,
+        "devise": "XAF",
+        "surDemande": false
+      },
+      "description": "Formation professionnelle préparant à l'assistance dans les services d'imagerie médicale, à l'accueil et à la préparation des patients ainsi qu'aux règles de radioprotection.",
+      "programme": [
+        "Anatomie humaine",
+        "Physiologie",
+        "Introduction à l'imagerie médicale",
+        "Principes de radiologie",
+        "Radiographie conventionnelle",
+        "Notions d'échographie",
+        "Notions de scanner",
+        "Notions d'imagerie médicale",
+        "Préparation des patients",
+        "Accueil et orientation des patients",
+        "Positionnement du patient",
+        "Préparation du matériel",
+        "Hygiène et asepsie",
+        "Radioprotection",
+        "Sécurité du patient",
+        "Gestion des dossiers d'imagerie",
+        "Archivage des examens",
+        "Communication professionnelle",
+        "Éthique et confidentialité",
+        "Maintenance de premier niveau du matériel",
+        "Stage pratique en service d'imagerie"
+      ],
+      "competences": [
+        "Accueillir et préparer les patients",
+        "Préparer le matériel d'imagerie",
+        "Assister le personnel spécialisé",
+        "Appliquer les règles de radioprotection",
+        "Respecter les protocoles d'hygiène",
+        "Organiser les dossiers d'imagerie",
+        "Assurer l'archivage des examens",
+        "Respecter les règles de confidentialité",
+        "Participer à l'organisation du service"
+      ],
+      "debouches": [
+        "Assistant en radiologie",
+        "Assistant en imagerie médicale",
+        "Agent d'accueil en service d'imagerie",
+        "Assistant technique en imagerie"
+      ],
+      "secteursEmploi": [
+        "Hôpitaux",
+        "Cliniques",
+        "Centres d'imagerie médicale",
+        "Centres de santé",
+        "Cabinets spécialisés"
+      ],
+      "contact": "Service des admissions",
+      "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
+}

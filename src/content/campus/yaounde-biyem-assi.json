@@ -1,0 +1,26 @@
+{
+  "id": "yaounde-biyem-assi",
+  "slug": "yaounde-biyem-assi",
+  "nom": "Yaoundé - Biyem-Assi",
+  "ville": "Yaoundé",
+  "contact": {
+    "telephone": "+237 6XX XXX XXX",
+    "email": "contact@gsvti.cm",
+    "adresse": "Biyem-Assi, Yaoundé, Cameroun",
+    "whatsapp": "+237 6XX XXX XXX"
+  },
+  "coordonnees": { "lat": 3.8480, "lng": 11.5021 },
+  "image": "/assets/images/campus/yaounde.jpg",
+  "galerie": [
+    {
+      "image": "../../../public/assets/hero/hero1.jpg",
+      "titre": "Campus de Yaoundé - Vue de l'intérieur",
+      "description": "Situé au cœur de la ville, dans un cadre propice à l'apprentissage et à la pratique."
+    },
+    {
+      "image": "../../../public/assets/hero/.jpg",
+      "titre": "Campus de Yaoundé - Vue de l'extérieur",
+      "description": "Un environnement moderne et accessible, à proximité des structures partenaires."
+    }
+  ]
+}

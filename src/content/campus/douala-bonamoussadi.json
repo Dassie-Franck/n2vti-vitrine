@@ -1,0 +1,26 @@
+{
+  "id": "douala-bonamoussadi",
+  "slug": "douala-bonamoussadi",
+  "nom": "Douala - Bonamoussadi",
+  "ville": "Douala",
+  "contact": {
+    "telephone": "+237 6XX XXX XXX",
+    "email": "douala@gsvti.cm",
+    "adresse": "Bonamoussadi, Douala, Cameroun",
+    "whatsapp": "+237 6XX XXX XXX"
+  },
+  "coordonnees": { "lat": 4.0833, "lng": 9.7500 },
+  "image": "../../../public/assets/hero/hero1.jpg",
+   "galerie": [
+    {
+      "image": "../../../public/assets/campus/campus2.jpg",
+      "titre": "Campus de Yaoundé- Vue de l'intérieur",
+      "description": "Situé au cœur de la ville, dans un cadre propice à l'apprentissage et à la pratique."
+    },
+    {
+      "image": "../../../public/assets/campus/campus1.jpg",
+      "titre":  "Campus de Yaoundé - Vue de l'exterieur",
+      "description": "Un environnement moderne et accessible, à proximité des structures partenaires."
+    }
+  ]
+}

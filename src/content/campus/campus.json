@@ -1,0 +1,19 @@
+[
+  {
+    "id": "campus-yaounde-biyem-assi",
+    "slug": "yaounde-biyem-assi",
+    "nom": "N2VTI Campus Principal - Yaoundé",
+    "ville": "Yaoundé",
+    "contact": {
+      "telephone": "+237 697 32 17 23",
+      "email": "contact@n2vti.cm",
+      "adresse": "Biyem-Assi (Quartier Acacias), Yaoundé",
+      "whatsapp": "+237 670 04 74 37"
+    },
+    "coordonnees": {
+      "lat": 3.8480,
+      "lng": 11.5021
+    },
+    "image": "../../../public/assets/hero/hero5.jpg"
+  }
+]

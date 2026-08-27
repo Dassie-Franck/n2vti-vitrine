@@ -1,0 +1,25 @@
+[
+  {
+  "id": "a001",
+  "slug": "ceremonie-remise-diplomes-2025",
+  "titre": "Cérémonie de remise des diplômes – Promotion 2025",
+  "datePublication": "2026-08-01",
+  "resume": "GSVTI célèbre la réussite de ses apprenants lors de la cérémonie officielle de remise des diplômes de la Promotion 2026.",
+  "contenu": "GSVTI a organisé une cérémonie officielle de remise des diplômes en l’honneur des apprenants de la Promotion 2026. Cette cérémonie a marqué l’aboutissement de plusieurs mois de formation, d’apprentissage et de développement des compétences professionnelles. Diplômés, familles, formateurs et membres de l’administration se sont réunis pour célébrer la réussite des lauréats et leur souhaiter pleine réussite dans leur parcours professionnel. À travers cette cérémonie, GSVTI réaffirme son engagement à former des professionnels compétents, opérationnels et prêts à répondre aux exigences du monde du travail.",
+  "image": "../../../public/assets/hero/hero2.jpg",
+  "campusIds": [
+    "yaounde-biyem-assi",
+    "douala-bonamoussadi"
+  ]
+},
+  {
+    "id": "a002",
+    "slug": "journee-portes-ouvertes-2026",
+    "titre": "Journée Portes Ouvertes : Venez découvrir nos campus",
+    "datePublication": "2026-08-01",
+    "resume": "Participez à notre Journée Portes Ouvertes pour découvrir nos formations et échanger avec nos équipes.",
+    "contenu": "GSVTI ouvre ses portes au grand public et aux futurs bacheliers. Venez visiter nos infrastructures modernes, rencontrer les enseignants et en savoir plus sur nos filières d'avenir sur les campus de Yaoundé et Douala.",
+    "image": "../../../public/assets/evenements/ouverte.jpg",
+    "campusIds": ["yaounde-biyem-assi", "douala-bonamoussadi"]
+  }
+]
