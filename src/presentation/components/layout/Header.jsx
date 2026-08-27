@@ -19,7 +19,7 @@ const NAV_LINKS = [
       { label: 'Qui somme-nous ?', path: '/a-propos' },
       { label: 'Notre approche pédagogique', path: '/approche-pedagogique' },
            { label: 'Notre équipe', path: '/notre-equipe' },
-      { label: 'Espace Presse', path: '/campus' },
+      
     ],
   },
   { label: 'ADMISSION', path: '/admission' },   // ✅ pointe vers la page infos, plus vers le formulaire

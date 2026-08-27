@@ -13,8 +13,8 @@ export const approchePedagogique = {
     "La promotion de la diversité et de l'inclusion",
   ],
   images: {
-    principale: '/assets/tp1.jpg',
-    secondaire: '/assets/tp2.jpg',
+    principale: '/assets/banners/tp1.webp',
+    secondaire: '/assets/banners/tp2.webp',
   },
   cta: {
     titre: 'Inscriptions Ouvertes 2026 - 2027',

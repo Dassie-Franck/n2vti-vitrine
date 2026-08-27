@@ -6,10 +6,124 @@ import EventIcon from '@mui/icons-material/Event'
 import SportsIcon from '@mui/icons-material/Sports'
 import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { container } from '../../../infrastructure/container'
+import { keyframes } from '@mui/system'
 
+// ========== ANIMATIONS KEYFRAMES ==========
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
+const fadeInLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`
+
+const fadeInRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`
+
+const scaleIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`
+
+const slideInBottom = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+`
+
+const pulseGlow = keyframes`
+  0%, 100% { box-shadow: 0 0 0 0 rgba(25, 118, 210, 0.4); }
+  50% { box-shadow: 0 0 0 15px rgba(25, 118, 210, 0); }
+`
+
+const slideLeft = keyframes`
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`
+
+const zoomIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0.5) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+`
+
+const bounceIn = keyframes`
+  0% { opacity: 0; transform: scale(0.3); }
+  50% { opacity: 1; transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+`
+
+const shimmer = keyframes`
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+`
+
+const float = keyframes`
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+`
+
+const rotateIn = keyframes`
+  from {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+`
+
+// ========== COMPOSANT ==========
 export default function CampusLifeSection() {
   const navigate = useNavigate()
   const [actualitesData, setActualitesData] = useState([])
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     async function fetchActualites() {
@@ -23,6 +137,10 @@ export default function CampusLifeSection() {
       }
     }
     fetchActualites()
+
+    // Trigger animations after component mount
+    const timer = setTimeout(() => setIsVisible(true), 100)
+    return () => clearTimeout(timer)
   }, [])
 
   const features = [
@@ -44,32 +162,34 @@ export default function CampusLifeSection() {
     },
   ]
 
-  // Liste des laboratoires et infrastructures pour la section défilante du bas
   const infrastructures = [
     {
       titre: "Laboratoire de Informatique",
       domaine: "Génie Informatique",
-      image: "../../../../public/assets/equipement_infra/n26.jpg"
+      image: "/assets/equipement_infra/n26.jpg"
     },
     {
       titre: "Laboratoire Beaute & Esthetique",
       domaine: "Beaute & Esthetique",
-      image: "../../../../public/assets/equipement_infra/n21.jpg"
+      image: "/assets/equipement_infra/n21.jpg"
     },
     {
       titre: "Laboratoire Paramedicale",
       domaine: "Paramedicale",
-      image: "../../../../public/assets/equipement_infra/infrastructure.jpg"
+      image: "/assets/equipement_infra/infrastructure.jpg"
     },
     {
       titre: "Salle de Classe Moderne",
       domaine: "Salle de Classe",
-      image: "../../../../public/assets/equipement_infra/salle.jpg"
+      image: "/assets/equipement_infra/salle.jpg"
     }
   ]
 
+  // Animation delays for staggered effects
+  const getDelay = (index, base = 0.1) => `${base * (index + 1)}s`
+
   return (
-    <Box sx={{ py: { xs: 6, md: 10 }, bgcolor: 'background.default', width: '100%' }}>
+    <Box sx={{ py: { xs: 6, md: 10 }, bgcolor: 'background.default', width: '100%', overflow: 'hidden' }}>
       {/* 1. Partie supérieure (Titre + Points forts + Grille 2x2 d'origine) */}
       <Container maxWidth="lg">
         <Box
@@ -78,20 +198,46 @@ export default function CampusLifeSection() {
             flexDirection: { xs: 'column', md: 'row' },
             alignItems: 'flex-start',
             gap: 5,
+            animation: isVisible ? `${fadeInUp} 0.8s ease-out forwards` : 'none',
+            opacity: 0,
           }}
         >
           {/* Colonne gauche : titre + points forts */}
-          <Box sx={{ width: { xs: '100%', md: '41.6667%' }, flexShrink: 0 }}>
+          <Box 
+            sx={{ 
+              width: { xs: '100%', md: '41.6667%' }, 
+              flexShrink: 0,
+              animation: isVisible ? `${fadeInLeft} 0.7s ease-out forwards` : 'none',
+              opacity: 0,
+              animationDelay: '0.1s',
+            }}
+          >
             <Typography
               variant="overline"
               display="block"
-              sx={{ color: 'primary.main', fontWeight: 700, letterSpacing: 2, mb: 1 }}
+              sx={{ 
+                color: 'primary.main', 
+                fontWeight: 700, 
+                letterSpacing: 2, 
+                mb: 1,
+                animation: isVisible ? `${slideLeft} 0.6s ease-out forwards` : 'none',
+                opacity: 0,
+              }}
             >
               NOS CAMPUS & ACTUALITÉS
             </Typography>
             <Typography
               variant="h4"
-              sx={{ fontWeight: 800, color: 'text.primary', mb: 3, lineHeight: 1.3, fontSize: { xs: '1.75rem', md: '2.125rem' } }}
+              sx={{ 
+                fontWeight: 800, 
+                color: 'text.primary', 
+                mb: 3, 
+                lineHeight: 1.3, 
+                fontSize: { xs: '1.75rem', md: '2.125rem' },
+                animation: isVisible ? `${fadeInUp} 0.7s ease-out forwards` : 'none',
+                opacity: 0,
+                animationDelay: '0.15s',
+              }}
             >
               Un cadre d'immersion idéal pour conjuguer exigence académique et vie associative
             </Typography>
@@ -99,7 +245,6 @@ export default function CampusLifeSection() {
             <Stack spacing={3}>
               {features.map((feature, index) => {
                 const Icon = feature.icon
-                // Alternance des puces icônes entre le Bleu et le Rouge
                 const iconBgColor = index % 2 === 0 ? 'primary.main' : 'secondary.main'
                 return (
                   <Stack
@@ -107,6 +252,11 @@ export default function CampusLifeSection() {
                     spacing={2}
                     alignItems="flex-start"
                     key={index}
+                    sx={{
+                      animation: isVisible ? `${fadeInRight} 0.6s ease-out forwards` : 'none',
+                      opacity: 0,
+                      animationDelay: getDelay(index, 0.2),
+                    }}
                   >
                     <Box
                       sx={{
@@ -119,15 +269,30 @@ export default function CampusLifeSection() {
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
-                        transition: 'transform 0.3s, box-shadow 0.3s',
+                        transition: 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease',
                         '&:hover': {
-                          transform: 'scale(1.1) rotate(5deg)',
+                          transform: 'scale(1.15) rotate(8deg)',
+                          boxShadow: '0 8px 25px rgba(0,0,0,0.2)',
                         },
+                        animation: isVisible ? `${bounceIn} 0.8s ease-out forwards` : 'none',
+                        animationDelay: getDelay(index, 0.3),
                       }}
                     >
                       <Icon sx={{ fontSize: 22 }} />
                     </Box>
-                    <Typography variant="body2" sx={{ color: 'text.primary', pt: 0.7, fontWeight: 500 }}>
+                    <Typography 
+                      variant="body2" 
+                      sx={{ 
+                        color: 'text.primary', 
+                        pt: 0.7, 
+                        fontWeight: 500,
+                        transition: 'transform 0.3s ease, color 0.3s ease',
+                        '&:hover': {
+                          transform: 'translateX(5px)',
+                          color: 'primary.main',
+                        }
+                      }}
+                    >
                       {feature.text}
                     </Typography>
                   </Stack>
@@ -137,7 +302,15 @@ export default function CampusLifeSection() {
           </Box>
 
           {/* Colonne droite : Grille 2x2 avec alternance Bleu/Rouge */}
-          <Box sx={{ width: { xs: '100%', md: '58.3333%' }, flexShrink: 0 }}>
+          <Box 
+            sx={{ 
+              width: { xs: '100%', md: '58.3333%' }, 
+              flexShrink: 0,
+              animation: isVisible ? `${fadeInRight} 0.8s ease-out forwards` : 'none',
+              opacity: 0,
+              animationDelay: '0.2s',
+            }}
+          >
             {actualitesData.length === 0 ? (
               <Typography color="text.secondary" align="center" sx={{ py: 6 }}>
                 Chargement des actualités...
@@ -163,12 +336,28 @@ export default function CampusLifeSection() {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     cursor: 'pointer',
-                    transition: 'opacity 0.3s',
-                    '&:hover': { opacity: 0.92 },
+                    transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                    '&:hover': { 
+                      opacity: 0.92,
+                      transform: 'scale(1.02)',
+                      boxShadow: 'inset 0 0 30px rgba(255,255,255,0.1)',
+                    },
+                    animation: isVisible ? `${zoomIn} 0.7s ease-out forwards` : 'none',
+                    opacity: 0,
+                    animationDelay: '0.3s',
                   }}
                   onClick={() => actualitesData[3] && navigate(`/actualites/rentree/${actualitesData[3].slug}`)}
                 >
-                  <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 1, fontSize: { xs: '1rem', md: '1.15rem' } }}>
+                  <Typography 
+                    variant="subtitle1" 
+                    sx={{ 
+                      fontWeight: 700, 
+                      mb: 1, 
+                      fontSize: { xs: '1rem', md: '1.15rem' },
+                      transition: 'transform 0.3s ease',
+                      '&:hover': { transform: 'translateX(5px)' },
+                    }}
+                  >
                     {actualitesData[3]?.titre || 'ACTUALITÉ RÉCENTE'}
                   </Typography>
                   <Typography variant="body2" sx={{ opacity: 0.9, mb: 2, fontSize: { xs: '0.85rem', md: '0.9rem' }, lineHeight: 1.5 }}>
@@ -182,7 +371,13 @@ export default function CampusLifeSection() {
                       borderColor: '#fff',
                       alignSelf: 'flex-start',
                       fontWeight: 700,
-                      '&:hover': { borderColor: '#fff', bgcolor: 'rgba(255,255,255,0.1)' },
+                      transition: 'all 0.3s ease',
+                      '&:hover': { 
+                        borderColor: '#fff', 
+                        bgcolor: 'rgba(255,255,255,0.15)',
+                        transform: 'scale(1.05)',
+                        boxShadow: '0 0 20px rgba(255,255,255,0.2)',
+                      },
                     }}
                   >
                     EN SAVOIR +
@@ -197,8 +392,14 @@ export default function CampusLifeSection() {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     cursor: 'pointer',
-                    transition: 'filter 0.4s',
-                    '&:hover': { filter: 'brightness(1.1)' },
+                    transition: 'all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                    '&:hover': { 
+                      filter: 'brightness(1.15) saturate(1.2)',
+                      transform: 'scale(1.03)',
+                    },
+                    animation: isVisible ? `${scaleIn} 0.7s ease-out forwards` : 'none',
+                    opacity: 0,
+                    animationDelay: '0.4s',
                   }}
                   onClick={() => {
                     const target = actualitesData[3]
@@ -214,8 +415,14 @@ export default function CampusLifeSection() {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     cursor: 'pointer',
-                    transition: 'filter 0.4s',
-                    '&:hover': { filter: 'brightness(1.1)' },
+                    transition: 'all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                    '&:hover': { 
+                      filter: 'brightness(1.15) saturate(1.2)',
+                      transform: 'scale(1.03)',
+                    },
+                    animation: isVisible ? `${scaleIn} 0.7s ease-out forwards` : 'none',
+                    opacity: 0,
+                    animationDelay: '0.5s',
                   }}
                   onClick={() => {
                     const target = actualitesData[2] || actualitesData[1]
@@ -233,15 +440,31 @@ export default function CampusLifeSection() {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     cursor: 'pointer',
-                    transition: 'opacity 0.3s',
-                    '&:hover': { opacity: 0.92 },
+                    transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                    '&:hover': { 
+                      opacity: 0.92,
+                      transform: 'scale(1.02)',
+                      boxShadow: 'inset 0 0 30px rgba(255,255,255,0.1)',
+                    },
+                    animation: isVisible ? `${zoomIn} 0.7s ease-out forwards` : 'none',
+                    opacity: 0,
+                    animationDelay: '0.6s',
                   }}
                   onClick={() => {
                     const target = actualitesData[2] || actualitesData[1]
                     if (target) navigate(`/actualites/rentree/${target.slug}`)
                   }}
                 >
-                  <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 1, fontSize: { xs: '1rem', md: '1.15rem' } }}>
+                  <Typography 
+                    variant="subtitle1" 
+                    sx={{ 
+                      fontWeight: 700, 
+                      mb: 1, 
+                      fontSize: { xs: '1rem', md: '1.15rem' },
+                      transition: 'transform 0.3s ease',
+                      '&:hover': { transform: 'translateX(5px)' },
+                    }}
+                  >
                     {actualitesData[2]?.titre || 'ÉVÉNEMENT DU CAMPUS'}
                   </Typography>
                   <Typography variant="body2" sx={{ opacity: 0.9, mb: 2, fontSize: { xs: '0.85rem', md: '0.9rem' }, lineHeight: 1.5 }}>
@@ -255,7 +478,13 @@ export default function CampusLifeSection() {
                       borderColor: '#fff',
                       alignSelf: 'flex-start',
                       fontWeight: 700,
-                      '&:hover': { borderColor: '#fff', bgcolor: 'rgba(255,255,255,0.1)' },
+                      transition: 'all 0.3s ease',
+                      '&:hover': { 
+                        borderColor: '#fff', 
+                        bgcolor: 'rgba(255,255,255,0.15)',
+                        transform: 'scale(1.05)',
+                        boxShadow: '0 0 20px rgba(255,255,255,0.2)',
+                      },
                     }}
                   >
                     EN SAVOIR +
@@ -283,8 +512,14 @@ export default function CampusLifeSection() {
                     cursor: 'pointer',
                     borderRadius: 2,
                     boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
-                    transition: 'transform 0.3s',
-                    '&:hover': { transform: 'translateY(-4px)' },
+                    transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                    '&:hover': { 
+                      transform: 'translateY(-8px) scale(1.01)',
+                      boxShadow: '0 12px 40px rgba(0,0,0,0.15)',
+                    },
+                    animation: isVisible ? `${slideInBottom} 0.7s ease-out forwards` : 'none',
+                    opacity: 0,
+                    animationDelay: getDelay(index, 0.7),
                   }}
                   onClick={() => navigate(`/actualites/fete/${item.slug}`)}
                 >
@@ -295,8 +530,11 @@ export default function CampusLifeSection() {
                       backgroundImage: `url(${item.image})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
-                      transition: 'filter 0.4s',
-                      '&:hover': { filter: 'brightness(1.1)' },
+                      transition: 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                      '&:hover': { 
+                        filter: 'brightness(1.1) saturate(1.15)',
+                        transform: 'scale(1.05)',
+                      },
                     }}
                   />
                   <Box 
@@ -307,11 +545,24 @@ export default function CampusLifeSection() {
                       flex: 1, 
                       display: 'flex',
                       flexDirection: 'column',
-                      justifyContent: 'space-between'
+                      justifyContent: 'space-between',
+                      transition: 'all 0.3s ease',
+                      '&:hover': {
+                        boxShadow: 'inset 0 0 30px rgba(255,255,255,0.05)',
+                      }
                     }}
                   >
                     <Box>
-                      <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 1, fontSize: '1.1rem' }}>
+                      <Typography 
+                        variant="subtitle1" 
+                        sx={{ 
+                          fontWeight: 700, 
+                          mb: 1, 
+                          fontSize: '1.1rem',
+                          transition: 'transform 0.3s ease',
+                          '&:hover': { transform: 'translateX(5px)' },
+                        }}
+                      >
                         {(item.titre || '').toUpperCase()}
                       </Typography>
                       <Typography 
@@ -335,7 +586,13 @@ export default function CampusLifeSection() {
                         borderColor: '#fff',
                         fontWeight: 700,
                         alignSelf: 'flex-start',
-                        '&:hover': { borderColor: '#fff', bgcolor: 'rgba(255,255,255,0.1)' },
+                        transition: 'all 0.3s ease',
+                        '&:hover': { 
+                          borderColor: '#fff', 
+                          bgcolor: 'rgba(255,255,255,0.15)',
+                          transform: 'scale(1.05)',
+                          boxShadow: '0 0 20px rgba(255,255,255,0.2)',
+                        },
                       }}
                     >
                       EN SAVOIR +
@@ -354,17 +611,43 @@ export default function CampusLifeSection() {
           <Typography
             variant="overline"
             display="block"
-            sx={{ color: 'primary.main', fontWeight: 700, letterSpacing: 2, mb: 1 }}
+            sx={{ 
+              color: 'primary.main', 
+              fontWeight: 700, 
+              letterSpacing: 2, 
+              mb: 1,
+              animation: isVisible ? `${slideLeft} 0.6s ease-out forwards` : 'none',
+              opacity: 0,
+              animationDelay: '0.8s',
+            }}
           >
             EXCELLENCE & TECHNOLOGIE
           </Typography>
           <Typography
             variant="h4"
-            sx={{ fontWeight: 800, color: 'text.primary', fontSize: { xs: '1.5rem', md: '2rem' } }}
+            sx={{ 
+              fontWeight: 800, 
+              color: 'text.primary', 
+              fontSize: { xs: '1.5rem', md: '2rem' },
+              animation: isVisible ? `${fadeInUp} 0.7s ease-out forwards` : 'none',
+              opacity: 0,
+              animationDelay: '0.9s',
+            }}
           >
             Nos Laboratoires & Infrastructures de Pointe
           </Typography>
-          <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1, maxWidth: '700px', mx: 'auto' }}>
+          <Typography 
+            variant="body2" 
+            sx={{ 
+              color: 'text.secondary', 
+              mt: 1, 
+              maxWidth: '700px', 
+              mx: 'auto',
+              animation: isVisible ? `${fadeInUp} 0.7s ease-out forwards` : 'none',
+              opacity: 0,
+              animationDelay: '1s',
+            }}
+          >
             Découvrez nos équipements modernes conçus pour offrir aux étudiants un cadre d'apprentissage pratique et hautement qualitatif.
           </Typography>
         </Box>
@@ -379,7 +662,12 @@ export default function CampusLifeSection() {
             py: 2,
             scrollbarWidth: 'thin',
             '&::-webkit-scrollbar': { height: '8px' },
-            '&::-webkit-scrollbar-thumb': { bgcolor: 'rgba(0, 0, 0, 0.2)', borderRadius: '4px' },
+            '&::-webkit-scrollbar-thumb': { 
+              bgcolor: 'rgba(0, 0, 0, 0.2)', 
+              borderRadius: '4px',
+              transition: 'background-color 0.3s ease',
+              '&:hover': { bgcolor: 'rgba(0, 0, 0, 0.4)' },
+            },
           }}
         >
           {infrastructures.map((infra, index) => (
@@ -395,11 +683,14 @@ export default function CampusLifeSection() {
                 flexShrink: 0,
                 display: 'flex',
                 flexDirection: 'column',
-                transition: 'transform 0.3s, box-shadow 0.3s',
+                transition: 'all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
                 '&:hover': {
-                  transform: 'translateY(-6px)',
-                  boxShadow: '0 8px 20px rgba(0,0,0,0.12)',
+                  transform: 'translateY(-10px) scale(1.02)',
+                  boxShadow: '0 12px 40px rgba(0,0,0,0.15)',
                 },
+                animation: isVisible ? `${slideInBottom} 0.7s ease-out forwards` : 'none',
+                opacity: 0,
+                animationDelay: getDelay(index, 1.1),
               }}
             >
               {/* Image de l'infrastructure */}
@@ -409,6 +700,11 @@ export default function CampusLifeSection() {
                   backgroundImage: `url(${infra.image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
+                  transition: 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                  '&:hover': { 
+                    filter: 'brightness(1.1) saturate(1.1)',
+                    transform: 'scale(1.05)',
+                  },
                 }}
               />
               {/* Description */}
@@ -416,15 +712,46 @@ export default function CampusLifeSection() {
                 <Box>
                   <Typography
                     variant="caption"
-                    sx={{ color: index % 2 === 0 ? 'primary.main' : 'secondary.main', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1 }}
+                    sx={{ 
+                      color: index % 2 === 0 ? 'primary.main' : 'secondary.main', 
+                      fontWeight: 700, 
+                      textTransform: 'uppercase', 
+                      letterSpacing: 1,
+                      transition: 'all 0.3s ease',
+                      '&:hover': { 
+                        letterSpacing: 2,
+                        color: index % 2 === 0 ? 'primary.dark' : 'secondary.dark',
+                      },
+                    }}
                   >
                     {infra.domaine}
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'text.primary', mt: 0.5, mb: 1 }}>
+                  <Typography 
+                    variant="subtitle1" 
+                    sx={{ 
+                      fontWeight: 700, 
+                      color: 'text.primary', 
+                      mt: 0.5, 
+                      mb: 1,
+                      transition: 'transform 0.3s ease, color 0.3s ease',
+                      '&:hover': { 
+                        transform: 'translateX(5px)',
+                        color: 'primary.main',
+                      },
+                    }}
+                  >
                     {infra.titre}
                   </Typography>
                 </Box>
-                <Typography variant="body2" sx={{ color: 'text.secondary', fontSize: '0.85rem' }}>
+                <Typography 
+                  variant="body2" 
+                  sx={{ 
+                    color: 'text.secondary', 
+                    fontSize: '0.85rem',
+                    transition: 'color 0.3s ease',
+                    '&:hover': { color: 'text.primary' },
+                  }}
+                >
                   Équipement de dernière génération pour l'accompagnement pédagogique et les travaux pratiques.
                 </Typography>
               </Box>
