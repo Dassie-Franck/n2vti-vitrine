@@ -8,7 +8,7 @@ import FaqSection from '@presentation/components/admission/FaqSection'
 export default function Admission() {
   return (
     <>
-      <PageHeroBanner image="../../../../public/assets/banners/admin.jpg" height={320} />
+      <PageHeroBanner image="/assets/banners/admin.jpg" height={320} />
       <StepsNavBar />
       <AdmissionSection />
       <PaiementSection />

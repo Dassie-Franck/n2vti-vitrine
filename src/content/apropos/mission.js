@@ -10,7 +10,7 @@ export const engagements = [
   {
     id: 'eng-1',
     titre: "En proposant aux entreprises",
-    image: '/assets/entreprise.jpg',
+    image: '/assets/entreprise.webp',
     points: [
       'De former des apprenants directement opérationnels dès la sortie de formation',
       "Des stages pratiques en entreprise pour anticiper les besoins de recrutement",
@@ -21,7 +21,7 @@ export const engagements = [
   {
     id: 'eng-2',
     titre: "En fédérant nos partenaires autour d'un réseau",
-    image: '/assets/institut/reseau-stage.jpg',
+    image: '/assets/institut/reseau-stage.webp',
     points: [
       'Sourcing RH — communication sur les métiers en tension',
       'Partage pédagogique entre structures partenaires',
@@ -31,7 +31,7 @@ export const engagements = [
   {
     id: 'eng-3',
     titre: "En faisant la promotion de l'insertion professionnelle",
-    image: '/assets/banners/admission-banners.jpg',
+    image: '/assets/banners/admission-banners.webp',
     points: [
       "Un accompagnement individualisé de chaque apprenant jusqu'à l'insertion",
       "Un réseau de structures partenaires pour faciliter l'accès à l'emploi",
