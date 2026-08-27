@@ -28,7 +28,7 @@ export default function ScrollToTopButton() {
         sx={{
           position: 'fixed',
           bottom: 24,
-          right: 90, // décalé pour ne pas chevaucher le bouton WhatsApp
+          right: 24, //  Collé tout à fait dans le coin droit de l'écran
           bgcolor: 'primary.main',
           color: 'white',
           zIndex: 1300,
